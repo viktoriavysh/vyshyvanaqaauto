@@ -38,4 +38,4 @@ def test_commits_exist(github_api):
 @pytest.mark.api
 def test_commit_exists(github_api):
     commit = github_api.get_commit('viktoriavysh','vyshyvanaqaauto')
-    assert commit[0]['sha'] == '2ba767de895f4f108b014f3c24f1ca346abf46bf'
+    assert commit[0]['sha'] == '56c48d22ba9238acd2b4d8ffc014f78d64797998', "sha needs to be updated"

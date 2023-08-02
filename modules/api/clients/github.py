@@ -16,9 +16,10 @@ class GitHub:
         r=requests.get(f"https://api.github.com/projects/{project_id}")
         body = r.json()
         return body
-        print(body)
+        
     
     def get_commit(self, owner, repo):
         r=requests.get(f'https://api.github.com/repos/{owner}/{repo}/commits')
         body = r.json()
         return body 
+        print(body)
